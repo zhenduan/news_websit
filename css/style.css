@@ -1,0 +1,369 @@
+:root{
+    --primary-color: #c72727;
+    --secondary-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --max-width: 1100px;
+}
+
+.category {
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+  }
+
+  /* Reset */
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body{
+      font-family: 'Lato', sans-serif;
+      line-height: 1.4;
+      background: var(--light-color); 
+  }
+
+  img{
+      width: 100%;
+  }
+
+  /* Utilities */
+  a{
+      color: #333;
+      text-decoration: none;
+  }
+
+  .current{
+      background: #C72626;
+      color: #fff;
+
+  }
+
+  ul li{
+      /* color: #fff !important; */
+      list-style: none;
+  }
+
+
+
+  .card{
+      background: #fff;
+      padding: 1rem;
+  }
+
+  .container{
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 1rem;
+  }
+
+  .category{
+      display: inline-block;
+      font-size: 0.55rem;
+      text-transform: uppercase;
+      padding: 0.45rem 0.55rem;
+      border-radius: 15px;
+      color: #fff;
+  }
+
+  .category-sports { background: var(--sports-color) }
+  .category-ent { background: var(--ent-color) }
+  .category-tech { background: var(--tech-color) }
+  
+
+
+
+  .btn{
+      color: #fff;
+      border: none;
+      background: #333;
+      padding: 0.65rem 0.85rem;
+      text-align: center;
+  }
+
+  .btn-block{
+      display: block;
+  }
+
+  .page-container{
+      display: grid;
+      grid-template-columns: 5fr 2fr;
+      grid-template-rows: repeat(3, 1fr);
+      margin: 1.5rem 0;
+      grid-gap: 1.5rem;
+
+  }
+
+  .page-container > *:first-child{
+      grid-row: 1 / span 3;
+  }
+
+  .l-heading{
+      font-size: 2rem;
+      font-weight: 900;
+  }
+
+.btn-light { background: var(--light-color) }
+.btn-primary { background: var(--primary-color) }
+.btn-secondary { background: var(--secondary-color) }
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+  color: #fff;
+}
+
+.py-1 { padding: 1.5rem 0 }
+.py-2 { padding: 2rem 0 }
+.py-3 { padding: 3rem 0 }
+.p-1 { padding: 1.5rem }
+.p-2 { padding: 2rem }
+.p-3 { padding: 3rem }
+
+.m-bottom-1{margin-bottom: 0.5rem;}
+.m-bottom-2{margin-bottom: 2rem;}
+.m-bottom-3{margin-bottom: 3rem;}
+
+
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+  }
+  
+  .bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+  }
+  
+  .bg-secondary {
+    background: var(--secondary-color);
+    color: #fff;
+  }
+
+  #main-nav{
+      background: #fff;
+  }
+
+  /* Deal with Nav */
+#main-nav .container{
+    display: grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-nav img{
+    width: 180px;
+}
+
+#main-nav .social{
+}
+
+#main-nav .social a{
+    padding: 0.25rem;
+}
+
+#main-nav .social i{
+    color: #777777;
+}
+
+#main-nav .menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main-nav .menu ul li{
+    list-style: none;
+ 
+}
+
+#main-nav .menu ul li a{
+    padding: 0.75rem 0.55rem;
+
+}
+
+#main-nav .menu ul li a:hover{
+    background: lightgray;
+    color: #333;
+
+}
+
+/* Showcase */
+#showcase{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/featured.jpg") no-repeat center center/cover;
+    height: 60vh;
+    color: #fff;
+}
+
+#showcase .showcase-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+#showcase .showcase-content{
+    margin-top: 5rem;
+}
+
+#showcase .showcase-content p{
+    margin-bottom: 1rem;
+}
+
+
+/* Home Articles */
+
+#home-articles .articles-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column: 1 / span 2;
+    grid-gap: 1rem;
+    align-items: center;
+
+}
+
+#home-articles .articles-container > *:last-child{
+    /* grid-column: 2 / span 2; */
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /* equals to grid-column: 2 / span 2 */
+}
+
+
+#home-articles .container h2{
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+#main-footer{
+    background: var(--dark-color);
+    color: #fff;
+}
+
+#main-footer img{
+    width: 150px;
+}
+
+#main-footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#main-footer ul li a{
+    color: #fff;
+}
+
+#main-footer h2{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+#main-footer .subscribe p{
+    margin-bottom: 1rem;
+}
+
+#main-footer .subscribe a:hover{
+    opacity: 0.7;
+}
+
+#main-footer .footer-container input[type = 'submit']{
+    width: 90%;
+}
+
+#main-footer .footer-container input[type = 'submit']:hover{
+    opacity: 0.7;
+}
+
+#main-footer .footer-container input[type = 'email']{
+    width: 90%;
+    height: 1.75rem;
+    padding: 0.25rem;
+    margin-bottom: 0.75rem;
+
+}
+
+#main-footer .footer-container ul li{
+    border-bottom: #c7c6c6 dotted 1px;
+    width: 80%;
+    padding: 0.45rem 0;
+}
+
+#main-footer .footer-container ul li a:hover{
+    color: red;
+}
+
+/* Copyright */
+#main-footer .footer-container > *:last-child{
+    grid-column: 1 / span 4;
+    text-align: center;
+    background: #444444;
+    justify-content: center;
+    align-items: center;
+    /* height: 2rem; */
+    margin:0.5rem 0;
+    bottom: 0;
+    padding: 0.75rem;
+}
+
+/* Article Page */
+
+#article .page-container .card img{
+    width: 100%;
+}
+
+/* Meta */
+#article .meta{
+    background:#EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.85rem 0.45rem;
+    align-items: center;
+}
+
+#article .meta i{
+    padding-right: 3px;
+}
+
+#categories ul li{
+    border-bottom: 1px dotted #333;
+    padding: 8px 0;
+}
+
+
+#categories ul li i{
+    padding-right: 5px;
+}
+
+#categories ul li a:hover{
+    color: red;
+}
+
+#article .join-club{
+
+    height: 60%;
+
+}

@@ -1,0 +1,64 @@
+.social{
+    display: none;
+}
+
+#main-nav .container{
+    display: flex;
+    /* grid-template-columns: 1fr; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-nav .menu ul{
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+/* showcase */
+#showcase .showcase-container{
+    grid-template-columns: 1fr;
+}
+
+/* Home Articles */
+
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child{
+
+    grid-template-columns: 1fr;
+    /* 设置为默认的值auto */
+    grid-column: auto;
+
+
+}
+
+#home-articles .articles-container{
+    grid-template-columns: 1fr;
+}
+
+/* Footer */
+#main-footer .footer-container > *:last-child{
+    grid-column:auto
+}
+
+#main-footer .footer-container{
+    grid-template-columns: 1fr;
+}
+
+#main-footer .footer-container > * {
+    margin-bottom: 1.5rem;
+}
+
+
+/* About Page */
+.page-container{
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+/* Article Page Sidebar */
+#article .join-club{
+
+    height: 100%;
+
+}
